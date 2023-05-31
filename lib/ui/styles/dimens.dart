@@ -12,6 +12,10 @@ class Dimens {
   static const double inputFieldRadius = 10;
   static const double inputFieldHeight = 65;
 
+  static const int mobile = 480;
+  static const int tablet = 1100;
+  static const int desktop = 1100;
+
   // static inputFieldPadding(BuildContext context) => EdgeInsets.symmetric(
   //     horizontal: context.screenWidth(3.5),
   //     vertical: context.screenHeight(2.7));

@@ -1,3 +1,4 @@
+import 'package:kahoot_localhost/ui/bottom_sheets/join_session_bottom_sheet.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 import '../../../app/app_setup.locator.dart';
@@ -11,6 +12,12 @@ void setupBottomSheetUi() {
     BottomSheetType.editProfile: (context, sheetRequest,
             Function(SheetResponse<SheetResponse>) completer) =>
         EditProfileBottomSheet(
+          request: sheetRequest,
+          completer: completer,
+        ),
+    BottomSheetType.joinSession: (context, sheetRequest,
+            Function(SheetResponse<SheetResponse>) completer) =>
+        JoinSessionBottomSheet(
           request: sheetRequest,
           completer: completer,
         ),
